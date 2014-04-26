@@ -25,3 +25,77 @@ java.lang.ClassNotFoundException: org.eclipse.wst.common.componentcore.Component
 	at org.springsource.ide.eclipse.gradle.ui.wizards.GradleImportWizard$1.doit(GradleImportWizard.java:66)
 	at org.springsource.ide.eclipse.gradle.core.util.GradleRunnable$1.run(GradleRunnable.java:49)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-04-26 12:39:01.885 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-04-26 14:23:43.333
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2014-04-26 14:23:43.333
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:23:43.334
+!MESSAGE "Spring UAA Integration (optional)" will be ignored because it is already installed.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:23:43.334
+!MESSAGE "Gradle IDE" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.334
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE Software being installed: Spring Dashboard (optional) 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.dashboard.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE Missing requirement: SpringSource Tool Suite Workspace Configuration 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.commons.configurator 3.5.0.201404011422-RELEASE) requires 'bundle org.eclipse.mylyn.commons.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.334
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE From: Eclipse Integration Commons 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.commons.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE To: org.springsource.ide.eclipse.commons.configurator [3.5.0.201404011422-RELEASE]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.334
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE From: Spring Dashboard (optional) 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.dashboard.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.334
+!MESSAGE To: org.springsource.ide.eclipse.commons.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-04-26 14:23:43.344
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2014-04-26 14:23:43.344
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:23:43.344
+!MESSAGE "Spring UAA Integration (optional)" will be ignored because it is already installed.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:23:43.344
+!MESSAGE "Gradle IDE" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.344
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE Software being installed: Spring Dashboard (optional) 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.dashboard.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE Missing requirement: SpringSource Tool Suite Workspace Configuration 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.commons.configurator 3.5.0.201404011422-RELEASE) requires 'bundle org.eclipse.mylyn.commons.ui [3.7.0,4.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.344
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE From: Eclipse Integration Commons 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.commons.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE To: org.springsource.ide.eclipse.commons.configurator [3.5.0.201404011422-RELEASE]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-04-26 14:23:43.344
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE From: Spring Dashboard (optional) 3.5.0.201404011422-RELEASE (org.springsource.ide.eclipse.dashboard.feature.group 3.5.0.201404011422-RELEASE)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-04-26 14:23:43.344
+!MESSAGE To: org.springsource.ide.eclipse.commons.feature.group 0.0.0
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-04-26 14:24:13.640
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2014-04-26 14:24:13.641
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:24:13.641
+!MESSAGE "Gradle IDE" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-04-26 14:24:13.642
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2014-04-26 14:24:13.642
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:24:13.642
+!MESSAGE "Gradle IDE" will be ignored because it is already installed.

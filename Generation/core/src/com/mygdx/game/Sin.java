@@ -7,6 +7,9 @@ public class Sin {
 	String name;
 	String color;
 	String description;
+	int boost;
+	int weak;
+	
 	public int getPercent() {
 		return percent;
 	}
@@ -46,6 +49,22 @@ public class Sin {
 
 	public void setCircle(int circle) {
 		this.circle = circle;
+	}
+
+	public int getBoost() {
+		return boost;
+	}
+
+	public void setBoost(int boost) {
+		this.boost = boost;
+	}
+
+	public int getWeak() {
+		return weak;
+	}
+
+	public void setWeak(int weak) {
+		this.weak = weak;
 	}
 	
 	
