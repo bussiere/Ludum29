@@ -10,13 +10,10 @@ public class Ludum29 extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	
-	int limbo = 0;
-	int lust = 0;
-	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("Background/Background.png");
+		img = new Texture("badlogic.jpg");
 	}
 
 	@Override

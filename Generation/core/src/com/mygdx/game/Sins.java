@@ -1,0 +1,11 @@
+package com.mygdx.game;
+
+public class Sins {
+
+	int percent;
+	String color;
+	String description;
+	
+	
+	
+}
