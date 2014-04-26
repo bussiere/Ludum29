@@ -1,0 +1,19 @@
+package com.mygdx.game;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class BoardDisplay extends Board {
+
+	WritePanel writePanel1;
+	
+	public BoardDisplay ()
+	{
+		this.writePanel1 = new WritePanel();
+		this.writePanel1.write("test");
+	}
+	
+	 public void render( SpriteBatch batch){
+		 this.writePanel.render(batch);
+	 }
+	
+}

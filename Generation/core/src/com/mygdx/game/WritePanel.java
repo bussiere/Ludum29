@@ -5,23 +5,38 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class WritePanel {
 	
 	WriteSprite writeSprite;
-	int size;
+	float size;
 	int xPlacement;
 	int yPlacement;
+	int spaceBLetters;
 	
 	public WritePanel()
 	{
-		writeSprite = new WriteSprite();
+		this.writeSprite = new WriteSprite();
+	}
+	
+	public void erase()
+	{
+		this.writeSprite.erase();
+	}
+	
+	public WritePanel(float size, int xPlacement, int yPlacement,int spaceBLetters)
+	{
+		this.size = size;
+		this.xPlacement = xPlacement;
+		this.yPlacement = yPlacement;
+		this.spaceBLetters = spaceBLetters;
+		this.writeSprite = new WriteSprite(size,xPlacement,yPlacement,spaceBLetters);
 	}
 	
 	public void write(String sentence)
 	{
-		writeSprite.write(sentence, xPlacement, yPlacement, size);
+		this.writeSprite.write(sentence, this.xPlacement, this.yPlacement, this.size);
 	}
 	
 	public void render(SpriteBatch batch)
 	{
-		writeSprite.render(batch);
+		this.writeSprite.render(batch);
 	}
 		
 	

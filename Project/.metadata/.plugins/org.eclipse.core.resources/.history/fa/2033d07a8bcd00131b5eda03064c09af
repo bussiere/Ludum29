@@ -1,0 +1,25 @@
+package com.mygdx.game;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class BoardDisplay extends Board {
+
+	WritePanel writePanel1;
+	WritePanel writePanel2;
+	
+	public BoardDisplay ()
+	{
+		this.writePanel1 = new WritePanel(-0.5f,50,265,8);
+		this.writePanel1.write("Souls :");
+		this.writePanel1 = new WritePanel(-0.5f,50,265,8);
+		this.writePanel1.write("0");
+	}
+	public updateSoul(int nbSouls)
+	{
+		
+	}
+	 public void render( SpriteBatch batch){
+		 this.writePanel1.render(batch);
+	 }
+	
+}

@@ -13,6 +13,8 @@ public class Ludum29 extends ApplicationAdapter {
 	Texture img;
 	float delay; // seconds
 
+	RuleEngine ruleEngine;
+	
 	Circle limbo;
 	Circle lust;
 	Circle gluttony;
@@ -95,10 +97,16 @@ public class Ludum29 extends ApplicationAdapter {
 		boardScore= new BoardScore();
 		boardSin = new BoardSin();
 		boardTech = new BoardTech();
+		
+		// Rule engine
+		ruleEngine = new RuleEngine();
 
 	}
 
 	public void Turn() {
+		ruleEngine.addTurn();
+		boardDisplay.updateSoul(ruleEngine.getNbSouls());
+		
 
 	}
 

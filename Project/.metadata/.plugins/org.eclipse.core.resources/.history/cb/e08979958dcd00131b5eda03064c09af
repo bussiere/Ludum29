@@ -1,0 +1,12 @@
+package com.mygdx.game;
+
+public class RuleEngine {
+          int nbSouls;
+          
+          
+           public RuleEngine()
+           {
+        	   this.nbSouls = 0;
+           }
+	
+}

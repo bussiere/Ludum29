@@ -28,16 +28,29 @@ public class WriteSprite {
 	public WriteSprite()
 	{
 		alphabetAtlas = new TextureAtlas(Gdx.files.internal("Atlas/Alphabet1.atlas"));
-		this.size = 1;
+		this.size = 2f;
 		this.xPlacement = 200;
 		this.yPlacement = 200;
 		this.spaceBLetters = 10;
 	}
 	
+	public WriteSprite(float size,int xPlacement, int yPlacement, int spaceBLetters)
+	{
+		alphabetAtlas = new TextureAtlas(Gdx.files.internal("Atlas/Alphabet1.atlas"));
+		this.size = size;
+		this.xPlacement = xPlacement;
+		this.yPlacement = yPlacement;
+		this.spaceBLetters = spaceBLetters;
+	}
+	
 	public void render(SpriteBatch batch)
 	{
-		for (Sprite letter : sentenceSprite)
+		System.out.println("rr");
+		System.out.println(this.sentenceSprite.size());
+		for (Sprite letter : this.sentenceSprite)
 		{
+			System.out.println("rry");
+			System.out.println(letter.getHeight());
 			letter.draw(batch);
 		}
 	}
@@ -55,23 +68,25 @@ public class WriteSprite {
 	public void write(String sentence,int xPlacement, int yPlacement, float size)
 	{
 		
-		 
+		 System.out.println(sentence);
 		String[] result = sentence.split("");
+		 System.out.println(result);
 		int i = 0;
 		     for (int x=0; x<result.length; x++)
 		     {
-		    	 i +=1;
-		    	 if (!result[x].equals(" ")) 
+
+		    	 if (!result[x].equals(" ") && !result[x].equals("")) 
 		    	 {
 		         System.out.println(result[x]);
 		         AtlasRegion regionAlphabet1 = alphabetAtlas.findRegion(result[x]);
 		         
 		         Sprite spriteCh1;
-		         spriteCh1 = new Sprite(regionAlphabet1 );
+		         spriteCh1 = new Sprite(regionAlphabet1);
 		         spriteCh1.scale(size);
-		         spriteCh1.setPosition(xPlacement+i*this.spaceBLetters, yPlacement);
-		         sentenceSprite.add(spriteCh1);
+		         spriteCh1.setPosition(xPlacement+i*spaceBLetters, yPlacement);
+		         this.sentenceSprite.add(spriteCh1);
 		    	 }
+		    	 i +=1;
 		    
 		         
 		     }
@@ -100,6 +115,12 @@ public class WriteSprite {
 
 	public void setyPlacement(int yPlacement) {
 		this.yPlacement = yPlacement;
+	}
+
+	public void erase() {
+		this.sentenceSprite = null;
+		this.sentenceSprite = new ArrayList();
+		
 	}
 	
 }

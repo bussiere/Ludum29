@@ -23,7 +23,7 @@ public class Board {
 	
 	 public Board()
 	 {
-		 
+		 writePanel = new WritePanel();
 	 }
 	 
 	 public void render( SpriteBatch batch){
