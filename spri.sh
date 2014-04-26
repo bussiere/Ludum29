@@ -1,1 +1,1 @@
-aseprite -resolution 800x600
+aseprite -resolution 1000x760
