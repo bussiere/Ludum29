@@ -45,12 +45,9 @@ public class WriteSprite {
 	
 	public void render(SpriteBatch batch)
 	{
-		System.out.println("rr");
-		System.out.println(this.sentenceSprite.size());
+
 		for (Sprite letter : this.sentenceSprite)
 		{
-			System.out.println("rry");
-			System.out.println(letter.getHeight());
 			letter.draw(batch);
 		}
 	}

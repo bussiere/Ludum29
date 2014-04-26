@@ -10,3 +10,6 @@
 1398527084802	Rename field 'writeSprite'
 1398527198827	Rename type 'WriteBoard'
 1398542311993	Rename field 'writeBoard'
+1398549915257	Rename type 'BoardPoint'
+1398550266272	Copy compilation unit
+1398553722088	Rename local variable 'regionAlphabet1'

@@ -29,10 +29,11 @@ public class Ludum29 extends ApplicationAdapter {
 
 	BoardDisplay boardDisplay;
 	BoardHelp boardHelp;
-	BoardPoint boardPoint;
+	BoardMana boardPoint;
 	BoardScore boardScore;
 	BoardSin boardSin;
 	BoardTech boardTech;
+	BoardArmaggedon boardArmaggedon;
 
 	City city;
 
@@ -93,10 +94,11 @@ public class Ludum29 extends ApplicationAdapter {
 		city = new City();
 		boardDisplay = new BoardDisplay();
 		boardHelp = new BoardHelp();
-		boardPoint = new BoardPoint();
+		boardPoint = new BoardMana();
 		boardScore= new BoardScore();
 		boardSin = new BoardSin();
 		boardTech = new BoardTech();
+		boardArmaggedon = new BoardArmaggedon();
 		
 		// Rule engine
 		ruleEngine = new RuleEngine();
@@ -138,6 +140,7 @@ public class Ludum29 extends ApplicationAdapter {
 		boardScore.render(batch);
 		boardSin.render(batch);
 		boardTech.render(batch);
+		boardArmaggedon.render(batch);
 
 		batch.end();
 
