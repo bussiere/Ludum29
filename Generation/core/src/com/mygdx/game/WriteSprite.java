@@ -1,21 +1,45 @@
 package com.mygdx.game;
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
+
 
 public class WriteSprite {
 
-	int size;
+	float size;
 	int xPlacement;
 	int yPlacement;
+	int spaceBLetters;
+	
+	private TextureAtlas alphabetAtlas;
+
+	ArrayList <Sprite> sentenceSprite = new ArrayList();
+	
 	
 	public WriteSprite()
 	{
-		
+		alphabetAtlas = new TextureAtlas(Gdx.files.internal("Atlas/Alphabet1.atlas"));
+		this.size = 1;
+		this.xPlacement = 200;
+		this.yPlacement = 200;
+		this.spaceBLetters = 10;
 	}
 	
 	public void render(SpriteBatch batch)
 	{
-		
+		for (Sprite letter : sentenceSprite)
+		{
+			letter.draw(batch);
+		}
 	}
 	
 	public void write(String sentence)
@@ -28,13 +52,33 @@ public class WriteSprite {
 		write(sentence,this.xPlacement,this.yPlacement,this.size);
 	}
 	
-	public void write(String sentence,int xPlacement, int yPlacement, int size)
+	public void write(String sentence,int xPlacement, int yPlacement, float size)
 	{
 		
+		 
+		String[] result = sentence.split("");
+		int i = 0;
+		     for (int x=0; x<result.length; x++)
+		     {
+		    	 i +=1;
+		    	 if (!result[x].equals(" ")) 
+		    	 {
+		         System.out.println(result[x]);
+		         AtlasRegion regionAlphabet1 = alphabetAtlas.findRegion(result[x]);
+		         
+		         Sprite spriteCh1;
+		         spriteCh1 = new Sprite(regionAlphabet1 );
+		         spriteCh1.scale(size);
+		         spriteCh1.setPosition(xPlacement+i*this.spaceBLetters, yPlacement);
+		         sentenceSprite.add(spriteCh1);
+		    	 }
+		    
+		         
+		     }
 	}
 
 
-	public int getSize() {
+	public float getSize() {
 		return size;
 	}
 

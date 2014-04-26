@@ -86,7 +86,15 @@ public class Ludum29 extends ApplicationAdapter {
 		limbo.setBoost(6);
 		limbo.setWeak(2);
 
-		// write Sprite
+		// BOARD
+		
+		city = new City();
+		boardDisplay = new BoardDisplay();
+		boardHelp = new BoardHelp();
+		boardPoint = new BoardPoint();
+		boardScore= new BoardScore();
+		boardSin = new BoardSin();
+		boardTech = new BoardTech();
 
 	}
 

@@ -1,5 +1,9 @@
 package com.mygdx.game;
 
-public class BoardPoint extends Board {
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+public class BoardPoint extends Board {
+	 public void render( SpriteBatch batch){
+		 writePanel.render(batch);
+	 }
 }
