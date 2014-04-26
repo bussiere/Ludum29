@@ -14,7 +14,7 @@ public class Circle {
 		return percent;
 	}
 	
-	public void init()
+	public  Circle()
 	{
 		this.setPercent(0);
 	}

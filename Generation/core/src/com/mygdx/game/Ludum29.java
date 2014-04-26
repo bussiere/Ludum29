@@ -23,6 +23,20 @@ public class Ludum29 extends ApplicationAdapter {
  Circle fraud;
  Circle treachery;
  
+ // les boards
+ 
+ BoardDisplay boardDisplay;
+ BoardHelp boardHelp;
+ BoardPoint boardPoint;
+ BoardScore boardScore;
+ BoardSin boardSin;
+ BoardTech boardTech;
+ 
+ City city;
+ 
+ 
+ 
+ 
 	@Override
 	public void create () {
 		delay = 2; // seconds
@@ -31,59 +45,54 @@ public class Ludum29 extends ApplicationAdapter {
 		img = new Texture("Background/Background.png");
 		
 		limbo = new Circle();
-		limbo.init();
 		limbo.setCircle(1);
 		limbo.setBoost(6);
 		limbo.setWeak(2);
 		
 		lust = new Circle();
-		lust.init();
 		lust.setCircle(2);
 		lust.setBoost(6);
 		lust.setWeak(2);
 		
 		
 		gluttony = new Circle();
-		gluttony.init();
 		gluttony.setCircle(3);
 		gluttony.setBoost(6);
 		gluttony.setWeak(2);
 		
 		greed = new Circle();
-		greed.init();
 		greed.setCircle(4);
 		greed.setBoost(6);
 		greed.setWeak(2);
 		
 		wrath = new Circle();
-		wrath.init();
 		wrath.setCircle(5);
 		wrath.setBoost(6);
 		wrath.setWeak(2);
 		
 		heresy = new Circle();
-		heresy.init();
 		heresy.setCircle(6);
 		heresy.setBoost(6);
 		heresy.setWeak(2);
 		
 		violence = new Circle();
-		violence.init();
 		violence.setCircle(7);
 		violence.setBoost(6);
 		violence.setWeak(2);
 		
 		fraud = new Circle();
-		fraud.init();
 		fraud.setCircle(8);
 		fraud.setBoost(6);
 		fraud.setWeak(2);
 		
 		treachery = new Circle();
-		treachery.init();
 		treachery.setCircle(9);
 		limbo.setBoost(6);
 		limbo.setWeak(2);
+		
+		// write Sprite
+		
+
 		
 	}
 
@@ -111,6 +120,20 @@ public class Ludum29 extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(img, 0, 0);
+		
+		// render de la city
+		city.render(batch);
+		
+		// render des boards
+		boardDisplay.render(batch);
+		 boardHelp.render(batch);
+		 boardPoint.render(batch);
+		 boardScore.render(batch);
+		 boardSin.render(batch);
+		 boardTech.render(batch);
+		
 		batch.end();
+		
+		
 	}
 }
