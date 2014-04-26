@@ -1,0 +1,24 @@
+package com.mygdx.game;
+
+public class WriteSprite {
+
+	int size;
+	int xPlacement;
+	int yPlacement;
+	
+	public WriteSprite()
+	{
+		
+	}
+	
+	public void write(String sentence)
+	{
+		
+	}
+	
+	public void render()
+	{
+		
+	}
+	
+}
