@@ -27,39 +27,18 @@ public class Ludum29 extends ApplicationAdapter {
 		
 		limbo = new Sin();
 		limbo.init();
-		limbo.setCircle(1);
 		
 		lust = new Sin();
 		lust.init();
-		lust.setCircle(2);
 		
 		gluttony = new Sin();
 		gluttony.init();
-		gluttony.setCircle(3);
 		
 		greed = new Sin();
 		greed.init();
-		greed.setCircle(4);
 		
 		wrath = new Sin();
 		wrath.init();
-		wrath.setCircle(5);
-		
-		heresy = new Sin();
-		heresy.init();
-		heresy.setCircle(1);
-		
-		violence = new Sin();
-		violence.init();
-		violence.setCircle(1);
-		
-		fraud = new Sin();
-		fraud.init();
-		limbo.setCircle(1);
-		
-		treachery = new Sin();
-		treachery.init();
-		limbo.setCircle(1);
 		
 	}
 

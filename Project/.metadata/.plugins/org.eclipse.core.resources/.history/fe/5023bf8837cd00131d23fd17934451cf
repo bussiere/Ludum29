@@ -51,7 +51,7 @@ public class Ludum29 extends ApplicationAdapter {
 		
 		violence = new Sin();
 		violence.init();
-		violence.setCircle(1);
+		limbo.setCircle(1);
 		
 		fraud = new Sin();
 		fraud.init();
