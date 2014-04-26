@@ -6,7 +6,7 @@ public class Board {
 	
 	int xPosition;
 	int yPosition;
-	WritePanel writeBoard;
+	WriteSprite writeSprite;
 	
 	public int getxPosition() {
 		return xPosition;
@@ -27,7 +27,7 @@ public class Board {
 	 }
 	 
 	 public void render( SpriteBatch batch){
-		 writeBoard.render(batch);
+		 writeSprite.render();
 	 }
 
 }

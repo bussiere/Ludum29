@@ -9,7 +9,7 @@ public class City extends Board {
 	}
 	
 	 public void render( SpriteBatch batch){
-		 writeBoard.render(batch);
+		 writeSprite.render();
 	 }
 	
 }

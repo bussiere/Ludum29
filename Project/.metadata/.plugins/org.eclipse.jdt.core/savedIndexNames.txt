@@ -57,7 +57,6 @@ INDEX VERSION 1.126+/home/bussiere/Workspace/Ludum29/Project/.metadata/.plugins/
 1928036885.index
 1791498496.index
 2254958884.index
-1738610816.index
 55113457.index
 3401309775.index
 891121960.index

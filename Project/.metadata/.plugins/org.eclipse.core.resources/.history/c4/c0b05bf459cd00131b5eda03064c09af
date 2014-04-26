@@ -6,7 +6,7 @@ public class Board {
 	
 	int xPosition;
 	int yPosition;
-	WritePanel writeBoard;
+	WriteBoard writeBoard;
 	
 	public int getxPosition() {
 		return xPosition;

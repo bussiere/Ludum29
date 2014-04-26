@@ -1,7 +1,5 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-
 public class WriteSprite {
 
 	int size;
@@ -9,11 +7,6 @@ public class WriteSprite {
 	int yPlacement;
 	
 	public WriteSprite()
-	{
-		
-	}
-	
-	public void render(SpriteBatch batch)
 	{
 		
 	}
@@ -32,7 +25,11 @@ public class WriteSprite {
 	{
 		
 	}
-
+	
+	public void render()
+	{
+		
+	}
 
 	public int getSize() {
 		return size;

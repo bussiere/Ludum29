@@ -13,11 +13,6 @@ public class WriteSprite {
 		
 	}
 	
-	public void render(SpriteBatch batch)
-	{
-		
-	}
-	
 	public void write(String sentence)
 	{
 		write(sentence,this.xPlacement,this.yPlacement);
@@ -32,7 +27,11 @@ public class WriteSprite {
 	{
 		
 	}
-
+	
+	public void render(SpriteBatch batch)
+	{
+		
+	}
 
 	public int getSize() {
 		return size;
