@@ -99,3 +99,148 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 !MESSAGE Cannot complete the request.  See the error log for details.
 !SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2014-04-26 14:24:13.642
 !MESSAGE "Gradle IDE" will be ignored because it is already installed.
+!SESSION 2014-04-26 15:22:12.806 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.springsource.ide.eclipse.gradle.core 4 0 2014-04-27 02:28:03.457
+!MESSAGE Couldn't launch Ludum29-html because no tasks have been selected
+
+!ENTRY org.springsource.ide.eclipse.gradle.core 1 0 2014-04-27 02:38:28.802
+!MESSAGE org.eclipse.wst.common.componentcore.ComponentCore
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.wst.common.componentcore.ComponentCore
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:190)
+	at org.springsource.ide.eclipse.gradle.core.wtp.WTPUtil.createImplementation(WTPUtil.java:250)
+	at org.springsource.ide.eclipse.gradle.core.wtp.WTPUtil.<clinit>(WTPUtil.java:246)
+	at org.springsource.ide.eclipse.gradle.core.GradleDependencyComputer.addJarEntry(GradleDependencyComputer.java:77)
+	at org.springsource.ide.eclipse.gradle.core.GradleDependencyComputer.computeEntries(GradleDependencyComputer.java:124)
+	at org.springsource.ide.eclipse.gradle.core.GradleDependencyComputer.ensureComputedFor(GradleDependencyComputer.java:180)
+	at org.springsource.ide.eclipse.gradle.core.GradleDependencyComputer.getLibraryEntries(GradleDependencyComputer.java:167)
+	at org.springsource.ide.eclipse.gradle.core.classpathcontainer.GradleClassPathContainer.getClasspathEntries(GradleClassPathContainer.java:141)
+	at org.eclipse.jdt.internal.core.JavaModelManager$VariablesAndContainersSaveHelper.saveContainers(JavaModelManager.java:4112)
+	at org.eclipse.jdt.internal.core.JavaModelManager$VariablesAndContainersSaveHelper.saveProjects(JavaModelManager.java:4179)
+	at org.eclipse.jdt.internal.core.JavaModelManager$VariablesAndContainersSaveHelper.save(JavaModelManager.java:4020)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:3991)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4222)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2014-04-27 02:38:32.933 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-04-27 02:39:26.145
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NoSuchMethodError: org.eclipse.jpt.jpa.core.JpaProjectManager.waitToGetJpaProjects()Ljava/lang/Iterable;
+	at com.google.appengine.eclipse.wtp.jpa.JpaWorkarounds.earlyStartup(JpaWorkarounds.java:34)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2014-04-27 02:39:26.189
+!MESSAGE Unhandled Exception
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa.e42 4 0 2014-04-27 02:39:26.189
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NoSuchMethodError: org.eclipse.jpt.jpa.core.JpaProjectManager.waitToGetJpaProjects()Ljava/lang/Iterable;
+	at com.google.appengine.eclipse.wtp.jpa.JpaWorkarounds.earlyStartup(JpaWorkarounds.java:34)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2014-04-27 02:39:33.075
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.9.3
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2014-04-27 02:39:33.141
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.6.0
+
+!ENTRY com.google.gdt.eclipse.core 1 0 2014-04-27 02:39:33.264
+!MESSAGE Scheduled rebuild of project Ludum29-html because of plugin update (current version: 3.5.1.v201312301719-rel-r42)
+
+!ENTRY org.eclipse.ui 2 2 2014-04-27 02:40:13.720
+!MESSAGE Invalid preference category path: org.springsource.ide.eclipse.commons.preferencePage (bundle: org.springframework.ide.eclipse.uaa, page: org.springframework.ide.eclipse.uaa.preferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2014-04-27 02:41:25.745
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2014-04-27 02:41:25.746
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2014-04-27 02:50:45.274
+!MESSAGE No valid Android XML Editor Delegate found for file /Ludum29-html/src/com/mygdx/game/GdxDefinition.gwt.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-04-27 02:50:50.962
+!MESSAGE Failed to load properties file for project 'Ludum29-html'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2014-04-27 02:50:58.288
+!MESSAGE No valid Android XML Editor Delegate found for file /Ludum29-html/src/com/mygdx/game/GdxDefinitionSuperdev.gwt.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-04-27 02:51:03.296
+!MESSAGE Failed to load properties file for project 'Ludum29-html'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-04-27 02:51:03.296
+!MESSAGE Failed to load properties file for project 'Ludum29-html'
+!SESSION 2014-04-27 02:57:09.661 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-04-27 02:57:18.716
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-04-27 02:57:33.870
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NoSuchMethodError: org.eclipse.jpt.jpa.core.JpaProjectManager.waitToGetJpaProjects()Ljava/lang/Iterable;
+	at com.google.appengine.eclipse.wtp.jpa.JpaWorkarounds.earlyStartup(JpaWorkarounds.java:34)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2014-04-27 02:57:33.897
+!MESSAGE Unhandled Exception
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa.e42 4 0 2014-04-27 02:57:33.926
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NoSuchMethodError: org.eclipse.jpt.jpa.core.JpaProjectManager.waitToGetJpaProjects()Ljava/lang/Iterable;
+	at com.google.appengine.eclipse.wtp.jpa.JpaWorkarounds.earlyStartup(JpaWorkarounds.java:34)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 2 2 2014-04-27 02:57:38.797
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2014-04-27 02:57:38.801
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

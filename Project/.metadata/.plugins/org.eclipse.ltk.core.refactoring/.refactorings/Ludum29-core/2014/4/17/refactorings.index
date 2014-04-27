@@ -13,3 +13,5 @@
 1398549915257	Rename type 'BoardPoint'
 1398550266272	Copy compilation unit
 1398553722088	Rename local variable 'regionAlphabet1'
+1398554718076	Rename field 'spacexFire'
+1398554732267	Rename field 'spaceyFire'

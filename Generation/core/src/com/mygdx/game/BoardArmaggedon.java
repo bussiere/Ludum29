@@ -16,8 +16,8 @@ public class BoardArmaggedon extends Board {
 	
 	int xPositionFire;
 	int yPositionFire;
-	int spacexFire;
-	int spaceyFire;
+	int xSpaceFire;
+	int ySpaceFire;
 	float sizeFire;
 	int firemax;
 	
@@ -33,12 +33,12 @@ public class BoardArmaggedon extends Board {
 		this.writePanel2.write("0");
 
 		
-		this.xPositionFire = 200;
-		int yPositionFire = 200;
-		int spacexFire;
-		int spaceyFire;
-		float sizeFire;
-		int firemax;
+		this.xPositionFire = 0;
+		this.yPositionFire = 0;
+		this.xSpaceFire = 12;
+		this.ySpaceFire = 12;
+		this.sizeFire = 0;
+		this.firemax = 4;
 		armageddonAtlas = new TextureAtlas(Gdx.files.internal("Atlas/Armageddon.atlas"));
 		fireArmageddon(0,0);
 		
@@ -51,26 +51,24 @@ public class BoardArmaggedon extends Board {
 		int i = 0;
 		int l = 0;
 		
-		int y = 10;
+		int y = 100;
 		
-		int u = 4;
-		
-		int j = 12;
-		int k = 12;
+int count;
 	     for (int x=0; x<y; x++)
 	     {
 
-
-
+count = x + 1;
+	    	 
 	         AtlasRegion regionFire = armageddonAtlas.findRegion("firesprite");
 	         
 	         Sprite spriteCh1;
 	         spriteCh1 = new Sprite(regionFire);
 	         spriteCh1.scale(sizeFire);
-	         spriteCh1.setPosition(xPositionFire+i*j, yPositionFire+l*k);
+	         spriteCh1.setPosition(xPositionFire+i*this.xSpaceFire, yPositionFire+l*this.ySpaceFire);
 	         this.aramageddonSprite.add(spriteCh1);
 	         i +=1;
-	    	 if (x % u == 0)
+	         
+	    	 if (count % this.firemax == 0)
 	    	 {
 	    		i = 0; 
 	    		l+= 1;

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.mygdx.game.Sin"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.utils.Timer.Task"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.SpriteBatch"/>
+<fullyQualifiedTypeName name="com.mygdx.game.Board"/>
+<fullyQualifiedTypeName name="com.mygdx.game.WriteSprite"/>
+<fullyQualifiedTypeName name="com.mygdx.game.City"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardDisplay"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardHelp"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardPoint"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardScore"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardSin"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardTech"/>
+<fullyQualifiedTypeName name="com.mygdx.game.WritePanel"/>
+<fullyQualifiedTypeName name="com.mygdx.game.RuleEngine"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.mygdx.game.BoardArmaggedon"/>
 </qualifiedTypeNameHistroy>
